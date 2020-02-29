@@ -1,4 +1,4 @@
-package org.techAltum.com;
+package seleniumPractice;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.dataReadres.com.ReadDataFrmXL;
 import org.dataReadres.com.ReadDataFromPropFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.techAltum.com.BaseTest;
 import org.testng.annotations.Test;
 
 public class TC01 extends BaseTest{
