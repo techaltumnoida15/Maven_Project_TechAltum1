@@ -26,7 +26,7 @@ public class BaseTest {
 		 * System.setProperty("webdriver.gecko.driver", browserDriverEXE +
 		 * "\\geckodriver.exe"); driver = new FirefoxDriver();
 		 */
-		init();
+		initDriver();
 		driver.manage().window().maximize();
 	}
 		
@@ -35,7 +35,7 @@ public class BaseTest {
 		//driver.quit();
 	}
 
-	public void init() {
+	public void initDriver() {
 		driver = new EventFiringWebDriver(dr);
 		eventListener = new WebEventListener();
 		driver.register(eventListener);

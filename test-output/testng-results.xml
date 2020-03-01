@@ -29,24 +29,6 @@
       <![CDATA[Text before find element is = 6]]>
     </line>
     <line>
-      <![CDATA[Text before find element is = 1]]>
-    </line>
-    <line>
-      <![CDATA[Text before find element is = 2]]>
-    </line>
-    <line>
-      <![CDATA[Text before find element is = 3]]>
-    </line>
-    <line>
-      <![CDATA[Text before find element is = 4]]>
-    </line>
-    <line>
-      <![CDATA[Text before find element is = 5]]>
-    </line>
-    <line>
-      <![CDATA[Text before find element is = 6]]>
-    </line>
-    <line>
       <![CDATA[Text before find element is = 7]]>
     </line>
     <line>
@@ -115,17 +97,29 @@
     <line>
       <![CDATA[Text before find element is = 29]]>
     </line>
+    <line>
+      <![CDATA[Text before find element is = 30]]>
+    </line>
+    <line>
+      <![CDATA[Text before find element is = 31]]>
+    </line>
+    <line>
+      <![CDATA[Text before find element is = 29]]>
+    </line>
+    <line>
+      <![CDATA[Text before find element is = 30]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17426" started-at="2020-02-29T08:37:37Z" finished-at="2020-02-29T08:37:54Z">
+  <suite name="Default suite" duration-ms="22723" started-at="2020-03-01T07:22:18Z" finished-at="2020-03-01T07:22:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17426" started-at="2020-02-29T08:37:37Z" finished-at="2020-02-29T08:37:54Z">
+    <test name="Default test" duration-ms="22723" started-at="2020-03-01T07:22:18Z" finished-at="2020-03-01T07:22:41Z">
       <class name="seleniumPractice.TC03">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="openBrowser" is-config="true" duration-ms="10305" started-at="2020-02-29T08:37:37Z" finished-at="2020-02-29T08:37:47Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="openBrowser" is-config="true" duration-ms="10540" started-at="2020-03-01T07:22:18Z" finished-at="2020-03-01T07:22:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="selectDatesFromCalendar()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="selectDatesFromCalendar" duration-ms="7099" started-at="2020-02-29T08:37:47Z" finished-at="2020-02-29T08:37:54Z">
+        <test-method status="PASS" signature="selectDatesFromCalendar()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="selectDatesFromCalendar" duration-ms="12160" started-at="2020-03-01T07:22:29Z" finished-at="2020-03-01T07:22:41Z">
           <reporter-output>
             <line>
               <![CDATA[Navigating to url = http://www.cheapoair.com]]>
@@ -135,24 +129,6 @@
             </line>
             <line>
               <![CDATA[Text before find element is = ]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 1]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 2]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 3]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 4]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 5]]>
-            </line>
-            <line>
-              <![CDATA[Text before find element is = 6]]>
             </line>
             <line>
               <![CDATA[Text before find element is = 1]]>
@@ -241,9 +217,21 @@
             <line>
               <![CDATA[Text before find element is = 29]]>
             </line>
+            <line>
+              <![CDATA[Text before find element is = 30]]>
+            </line>
+            <line>
+              <![CDATA[Text before find element is = 31]]>
+            </line>
+            <line>
+              <![CDATA[Text before find element is = 29]]>
+            </line>
+            <line>
+              <![CDATA[Text before find element is = 30]]>
+            </line>
           </reporter-output>
         </test-method> <!-- selectDatesFromCalendar -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-02-29T08:37:54Z" finished-at="2020-02-29T08:37:54Z">
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:seleniumPractice.TC03@2a70a3d8]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2020-03-01T07:22:41Z" finished-at="2020-03-01T07:22:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

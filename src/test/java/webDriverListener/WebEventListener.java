@@ -5,49 +5,52 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
-import org.techAltum.com.BaseTest;
+import org.techAltum.helper.BaseClass;
+import org.testng.Reporter;
 
-public class WebEventListener extends BaseTest implements WebDriverEventListener{
+public class WebEventListener extends BaseClass implements WebDriverEventListener{
 
 	@Override
 	public void beforeAlertAccept(WebDriver driver) {
-		//driver.
+		Reporter.log("Text on alert is = " + driver.switchTo().alert().getText());
 		
 	}
 
 	@Override
 	public void afterAlertAccept(WebDriver driver) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Accepting the alert.");
+		driver.switchTo().alert().accept();
+		Reporter.log("Alert accepted.");		
 	}
 
 	@Override
 	public void afterAlertDismiss(WebDriver driver) {
-		// TODO Auto-generated method stub
+		driver.switchTo().alert().dismiss();
+		System.out.println("Alert is dismissed.");
 		
 	}
 
 	@Override
 	public void beforeAlertDismiss(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Text before dismiss the alert is = " + driver.switchTo().alert().getText());
 		
 	}
 
 	@Override
 	public void beforeNavigateTo(String url, WebDriver driver) {
-		System.out.println("Before Navigate to URL" + url);
+		System.out.println("Navigating to url = " + url);
 		
 	}
 
 	@Override
 	public void afterNavigateTo(String url, WebDriver driver) {
-		System.out.println("After Navigate to URL" + url);
+		System.out.println("Navigation is complete on url = " + url);
 		
 	}
 
 	@Override
 	public void beforeNavigateBack(WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("Navigating back");
 		
 	}
 
@@ -83,7 +86,9 @@ public class WebEventListener extends BaseTest implements WebDriverEventListener
 
 	@Override
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-		// TODO Auto-generated method stub
+		String text = driver.findElement(by).getText();
+		Reporter.log("Text before find element is = " + text);
+		
 		
 	}
 
@@ -95,18 +100,13 @@ public class WebEventListener extends BaseTest implements WebDriverEventListener
 
 	@Override
 	public void beforeClickOn(WebElement element, WebDriver driver) {
-		if(element.isEnabled()) {
-			System.out.println("Element = " + element.toString() + " is enable");
-		}
-		else {
-			System.out.println("Not Enable");
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void afterClickOn(WebElement element, WebDriver driver) {
-		System.out.println("Click on element " + element.toString());
+		// TODO Auto-generated method stub
 		
 	}
 
@@ -124,13 +124,13 @@ public class WebEventListener extends BaseTest implements WebDriverEventListener
 
 	@Override
 	public void beforeScript(String script, WebDriver driver) {
-		// TODO Auto-generated method stub
-		
+
+		Reporter.log("This is before script.");
 	}
 
 	@Override
 	public void afterScript(String script, WebDriver driver) {
-		// TODO Auto-generated method stub
+		System.out.println("This is after script.");
 		
 	}
 
@@ -175,5 +175,4 @@ public class WebEventListener extends BaseTest implements WebDriverEventListener
 		// TODO Auto-generated method stub
 		
 	}
-
 }
